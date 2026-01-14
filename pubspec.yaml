@@ -36,10 +36,20 @@ dependencies:
   cupertino_icons: ^1.0.8
   get: ^4.7.3
   google_fonts: ^7.0.2
+icons_launcher:
+  image_path: "assets/home/target.png"
+  platforms:
+    android:
+      enable: true
+    ios:
+      enable: true
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
+  icons_launcher: any
+
+
 
   # The "flutter_lints" package below contains a set of recommended lints to
   # encourage good coding practices. The lint set provided by the package is

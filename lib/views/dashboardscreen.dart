@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:untitled/reusable/reusableappbar.dart';
 import 'package:untitled/util/appcolors.dart';
 import 'package:untitled/views/homescreen.dart';
+import 'package:untitled/views/profilescreen.dart';
 
 import '../util/images.dart';
 import 'livescreen.dart';
@@ -20,7 +21,7 @@ class _MainScreenState extends State<MainScreen> {
     HomeScreen(),
     LiveScreen(),
     Center(child: Text('')),
-    Center(child: Text('Profile')),
+    ProfileScreen(),
   ];
 
   @override
