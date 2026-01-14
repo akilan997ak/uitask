@@ -26,12 +26,19 @@ class _MainScreenState extends State<MainScreen> {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: CustomAppBar(),
-      body: _screens[_index],
-      bottomNavigationBar: AppBottomNav(
-        currentIndex: _index,
-        onTap: (i) => setState(() => _index = i),
+    return SafeArea(
+      child: Scaffold(
+        appBar: CustomAppBar(),
+        body: Center(
+          child: Container(
+            constraints: BoxConstraints(maxWidth: 900),
+            child: _screens[_index],
+          ),
+        ),
+        bottomNavigationBar: AppBottomNav(
+          currentIndex: _index,
+          onTap: (i) => setState(() => _index = i),
+        ),
       ),
     );
   }
